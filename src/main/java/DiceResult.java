@@ -84,8 +84,14 @@ public class DiceResult {
             .collect(toList());
     }
 
-    public List<Integer> sortedValues(){
+    /**
+     * Returns a new list containing the sorted values of the dice.
+     *
+     * @return a list containing the sorted values of the dice
+     */
+    public List<Integer> sortedValues() {
         return this.dice.stream().sorted().collect(toList());
     }
+
 
 }
